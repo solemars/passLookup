@@ -1,6 +1,6 @@
 <?php
 @session_start();
-
+#test
 
 
 if($_POST['pNum']=="no"){                // # 이름, 생년월일, 출신중학교 검색, 수험번호가 아닐시 pNum=no로 데이터를 넘겨 받음
