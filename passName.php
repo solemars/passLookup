@@ -19,7 +19,7 @@ if($_POST['pNum']=="no"){                // # 이름, 생년월일, 출신중학
        
 }
 
-$conn=mysqli_connect("localhost","amars","sumtim12","ipsi");  //DB 연결
+$conn=mysqli_connect("localhost","****","****","****");  //DB 연결 id, passwd, dbname 입력
 mysqli_query($conn,"SET NAMES utf8");
 if(mysqli_connect_errno()){
         echo "MySQL connection fault: ".mysqli_connect_error();
