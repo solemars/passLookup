@@ -1,13 +1,4 @@
 
---
--- 데이터베이스: `ipsi`
---
-
--- --------------------------------------------------------
-
---
--- 테이블 구조 `sg_pass`
---
 
 CREATE TABLE `sg_pass` (
   `pType` varchar(10) NOT NULL,
@@ -17,3 +8,4 @@ CREATE TABLE `sg_pass` (
   `pBirth` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+/*테스트 */

@@ -30,14 +30,17 @@ mysqli_query($conn,"set session character_set_client=utf8;");
 
 $result=mysqli_query($conn,$sql);  //쿼리 결과 저장
 
-
-if(!$result)
- echo "no result";
-else
-{
+$row=mysqli_fetch_array($result)
+//if(!$result)
+// echo "no result";
+//else
+//{
         #SQL검색 결과 속성별로 저장
-        while($row=mysqli_fetch_array($result))
-        {
+
+if($row['pName']==""){
+        echo "불합격입니다."
+}
+else{
                 #출력 양식지정
                 echo "<TABLE align=center border=1 cellspacing=0 cellpadding=0 style=border-collapse:collapse;border:none;> <TR>
                      <TD valign=middle style=width:454px;height:70px;border-left:solid #000000 0.4pt;border-right:solid #000000 0.4pt;
